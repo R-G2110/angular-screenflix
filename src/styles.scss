@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  /* Color base */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-red: #E50914;
+  --color-gray-light: #B9B9B8;
+  --color-gray-dark: #23252B;
+
+  /* Typography */
+  --font-base: 1rem;
+  --font-xs: 0.9rem;
+  --font-md: 1.2rem;
+  --font-lg: 2.4rem;
+  --font-xl: 3rem;
+  --font-xxl: 3.5rem;
+  --font-xxxl: 4.2rem;
+  --font-xxxxl: 5.2rem;
+
+  /* Layout */
+  --header-height: 50px;
+  --footer-height: 50px;
+
+  --border-width: 1px;
+  --border-color: var(--color-gray-light);
+
+  --text-color: var(--color-white);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - var(--header-height));
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: var(--font-base);
+  color: var(--text-color);
+  background-color: var(--color-gray-dark);
+}
